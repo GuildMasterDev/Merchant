@@ -1,0 +1,29 @@
+{
+  "name": "merchant",
+  "version": "1.0.0",
+  "description": "E-commerce resource directory for entrepreneurs",
+  "productName": "Merchant Directory",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuildMasterDev/Merchant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GuildMasterDev/Merchant/issues"
+  },
+  "homepage": "https://github.com/GuildMasterDev/Merchant#readme",
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchant Directory - E-commerce Resources</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Merchant Directory</h1>
+        <p>Your guide to starting an online business</p>
+    </header>
+
+    <nav class="category-nav">
+        <button class="category-btn active" data-category="all">All Resources</button>
+        <button class="category-btn" data-category="marketplace">Marketplaces</button>
+        <button class="category-btn" data-category="print-on-demand">Print on Demand</button>
+        <button class="category-btn" data-category="ecommerce">E-commerce Platforms</button>
+        <button class="category-btn" data-category="payment">Payment Processing</button>
+        <button class="category-btn" data-category="marketing">Marketing Tools</button>
+        <button class="category-btn" data-category="design">Design Tools</button>
+        <button class="category-btn" data-category="shipping">Shipping & Fulfillment</button>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search resources...">
+    </div>
+
+    <main class="resources-grid" id="resourcesGrid">
+    </main>
+
+    <footer>
+        <p>Merchant Directory - Helping entrepreneurs start their online business journey</p>
+    </footer>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
