@@ -1,6 +1,6 @@
 {
   "name": "merchant",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "E-commerce resource directory for entrepreneurs",
   "productName": "Merchant Directory",
   "main": "main.js",
