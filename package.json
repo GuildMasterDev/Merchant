@@ -15,15 +15,83 @@
     "type": "git",
     "url": "git+https://github.com/GuildMasterDev/Merchant.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "electron",
+    "ecommerce",
+    "directory",
+    "merchant",
+    "resources"
+  ],
+  "author": "GuildMaster Development",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/GuildMasterDev/Merchant/issues"
   },
   "homepage": "https://github.com/GuildMasterDev/Merchant#readme",
   "devDependencies": {
-    "electron": "^38.0.0"
+    "electron": "^41.0.0",
+    "electron-builder": "^26.8.1"
+  },
+  "build": {
+    "appId": "dev.guildmaster.merchant",
+    "productName": "Merchant Directory",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "styles.css",
+      "assets/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.business",
+      "icon": "assets/icon.icns",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ]
+    },
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "linux": {
+      "icon": "assets/icon.png",
+      "category": "Office",
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm"
+      ]
+    }
   }
 }
